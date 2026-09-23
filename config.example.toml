@@ -1,0 +1,22 @@
+[miner]
+pool = "pool.supportxmr.com:3333"
+pool_password = "{worker}"
+wallet = ""
+worker = "android-arm"
+threads = 2
+cpu_limit = 50
+priority = 1
+randomx_mode = "light" # obrigatório em Android/Termux ARM 32-bit
+xmrig_path = "./vendor/xmrig/build/xmrig"
+xmrig_api_port = 18080
+
+[server]
+dashboard_host = "127.0.0.1" # altere para 0.0.0.0 junto com lan_access=true
+dashboard_port = 8080
+lan_access = false
+auth_token_file = "./data/admin.token"
+metrics_interval = 3
+
+[logging]
+log_max_bytes = 2000000
+log_backups = 2
